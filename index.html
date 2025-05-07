@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Caydan Frank Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
-
+<div id="particles-js"></div>
 <body>
-
     <section class="hero">
         <div class="hero-heading">
             <div>
@@ -20,14 +21,14 @@
                 <!-- I am a web developer with a passion for creating innovative and user-friendly experiences. -->
 
             </div>
-            <a href="#about">Click Here</a>
+            <a href="#about" class="btn">View my Work</a>
         </div>
     </section>
     <nav class="navbar">
         <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contacts</a></li>
         </ul>
     </nav>
     <div class="background">
@@ -45,8 +46,8 @@
                 eius sequi quibusdam iusto nisi nam.</p>
         </div>
     </section>
-    <h2 class="about-heading">Projects</h2>
-    <section class="projects">
+    <h2 class="about-heading" id="projects">Projects</h2>
+    <section class="projects" >
         <!-- Backrooms Project -->
         <div class="project-content">
             <h2 class="project-title">The Backrooms (Game)</h2>
@@ -105,7 +106,7 @@
 
 
     </section>
-    <section class="about contact">
+    <section class="about contact" id="contact">
         <h2>Contact Me</h2>
         <p class="contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cupiditate!</p>
         <form class="contact-form">

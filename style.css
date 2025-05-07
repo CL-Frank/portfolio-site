@@ -10,10 +10,23 @@ body {
     font-family: montserrat, sans-serif;
     background-color: #1a1a1a;
 }
-
+/* Hero Button */
+.btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff5d52, #ff9447);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(255, 93, 82, 0.3);
+    letter-spacing: 1px;
+    margin: 5rem;
+  }
 /* NAVBAR */
 .navbar {
-    background-color: aqua;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -39,15 +52,19 @@ ul{
 }
 .navbar li {
     display: inline-block;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     padding: 10px;
     margin-left: 2em;
     transition: ease-in-out 0.25s;
 }
+.nav-link{
+    font-weight: 600;
+    color: white;
+}
 
 .navbar li:hover {
     cursor: pointer;
-    background-color: azure;
+    /* background-color: azure; */
 }
 
 /* NAVBAR END */
@@ -371,4 +388,17 @@ img {
     overflow-clip-margin: content-box;
     overflow: clip;
 }
+a{
+    text-decoration: none;
+}
 /* ELEMENTS END */
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
