@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <section class="hero">
         <div class="hero-heading">
             <div>
-                <span class="clf" style="font-size: 6rem;">I am Caydan Frank</span> <br>
+                <span class="clf" style="font-size: 6rem;">I'm Caydan Frank</span> <br>
 
             </div>
             <div class="hero-blurb">
-                I am a web developer with a passion for creating innovative and user-friendly experiences.
+                <!-- I am a web developer with a passion for creating innovative and user-friendly experiences. -->
 
-            </div> 
+            </div>
             <a href="#about">Click Here</a>
         </div>
     </section>
@@ -38,26 +40,69 @@
                     <img src="imgs/temp.png" alt="">
                 </div>
             </div>
-            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eius enim, obcaecati, aut maxime voluptates incidunt illo repellat ipsa odio excepturi autem. Cupiditate, quaerat eius sequi quibusdam iusto nisi nam.</p>
+            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eius enim,
+                obcaecati, aut maxime voluptates incidunt illo repellat ipsa odio excepturi autem. Cupiditate, quaerat
+                eius sequi quibusdam iusto nisi nam.</p>
         </div>
     </section>
+    <h2 class="about-heading">Projects</h2>
     <section class="projects">
-        <h2 class="about-heading">Projects</h2>
+        <!-- Backrooms Project -->
         <div class="project-content">
+            <h2 class="project-title">The Backrooms (Game)</h2>
             <div class="project-img-container">
-                    <img src="imgs/temp.png" alt="">
-            </div>
-            <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eius enim, obcaecati, aut maxime voluptates incidunt illo repellat ipsa odio excepturi autem. Cupiditate, quaerat eius sequi quibusdam iusto nisi nam.</p>
-        </div>
-        <div class="project-content">
-            
-            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eius enim, obcaecati, aut maxime voluptates incidunt illo repellat ipsa odio excepturi autem. Cupiditate, quaerat eius sequi quibusdam iusto nisi nam.</p>
-            <div class="profile">
-                <div class="profile-img">
-                    <img src="imgs/temp.png" alt="">
+                <div class="image-overlay">
+
+                    <img src="imgs/backrooms.png" alt="">
+                    <div class="overlay-text">
+                        <p class="project-text">A short Unity-based horror game inspired by the Backrooms concept.
+                            Players navigate a maze-like environment to find the exit while avoiding a pursuing monster.
+                            The game features real-time score tracking using an Azure online database.</p>
+                    </div>
                 </div>
             </div>
+            <div class="project-tools">
+                <p>Unity</p>
+                <p>C#</p>
+                <p>Azure</p>
+            </div>
         </div>
+
+        <div class="project-content">
+            <div class="project-title">Finanace Manager for Events</div>
+            <div class="project-img-container">
+                <div class="image-overlay">
+
+                    <img src="imgs/finance.png" alt="">
+                    <div class="overlay-text">
+                        <p class="project-text">A Windows Forms application built in Visual Studio Code for managing and editing financial events. Users can log detailed product entries, including descriptions, cost price, quantity, and selling price, enabling efficient tracking of inventory and sales data..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tools">
+                <p>C#</p>
+                <p>Windows Form</p>
+            </div>
+
+        </div>
+        <div class="project-content">
+            <div class="project-title">U.S House Price Predictor</div>
+            <div class="project-img-container">
+                <div class="image-overlay">
+
+                    <img src="imgs/housepredict.png" alt="">
+                    <div class="overlay-text">
+                        <p class="project-text">A web-based application that estimates house prices using real U.S. housing market data. Trained in Python with multiple machine learning models, the app allows users to input property features or upload CSV files for batch predictions. Deployed on Render for fast, accessible performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tools">
+                <p>Python</p>
+                <p>Dash Bootstrap</p>
+            </div>
+        </div>
+
+
 
     </section>
     <section class="about contact">
@@ -66,12 +111,15 @@
         <form class="contact-form">
             <input type="text" name="name" placeholder="Name" class="contact-input" required><br>
             <input type="text" name="email" placeholder="Email" class="contact-input" required><br>
-            <textarea type="text" name="message" placeholder="Message" class="contact-input" draggable="false" required></textarea><br>
-                <button type="submit">Submit</button>
-            
+            <textarea type="text" name="message" placeholder="Message" class="contact-input" draggable="false"
+                required></textarea><br>
+            <button type="submit">Submit</button>
+
             <label for=""></label>
         </form>
     </section>
-    <footer></footer>
+    <footer>
+    </footer>
 </body>
+
 </html>
