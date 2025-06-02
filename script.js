@@ -44,3 +44,11 @@ particlesJS("particles-js", {
     retina_detect: true,
     
   });
+
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    const recaptcha = grecaptcha.getResponse();
+    if (!recaptcha) {
+      e.preventDefault();
+      alert("Please complete the CAPTCHA.");
+    }
+  });

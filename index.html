@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="script.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <div id="particles-js"></div>
 <body>
@@ -37,13 +38,10 @@
         <h2 class="about-heading">About</h2>
         <div class="about-content">
             <div class="profile">
-                <div class="profile-img">
-                    <img src="imgs/temp.png" alt="">
-                </div>
+                    <img src="imgs/profile_2.jpg" alt="Image">
             </div>
-            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, eius enim,
-                obcaecati, aut maxime voluptates incidunt illo repellat ipsa odio excepturi autem. Cupiditate, quaerat
-                eius sequi quibusdam iusto nisi nam.</p>
+            <p class="about-text">I'm a Bachelor of Computing student at Belgium Campus with a passion for full-stack development, problem-solving, and continuous growth. With experience in both frontend and backend web application development. <br><br> <br>
+                This portfolio showcases some of my projects, skills, and experiences that reflect my journey as a developer and leader. Whether you're here to view my work, explore my capabilities, or connect on opportunities—thank you for visiting!.</p>
         </div>
     </section>
     <h2 class="about-heading" id="projects">Projects</h2>
@@ -106,14 +104,24 @@
 
 
     </section>
-    <section class="about contact" id="contact">
+
+    <section class="contact" id="contact">
         <h2>Contact Me</h2>
-        <p class="contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cupiditate!</p>
-        <form class="contact-form">
+        <p class="contact-text">Feel free to contact me if you'd like to reach reach out or have any questions, I'd be glad to reply!</p>
+        <form class="contact-form" action="https://formspree.io/f/mrbkgqzp"
+  method="POST">
+  <input type="text" name="_gotcha" style="display:none" />
+
             <input type="text" name="name" placeholder="Name" class="contact-input" required><br>
-            <input type="text" name="email" placeholder="Email" class="contact-input" required><br>
+
+            <input type="email" name="email" placeholder="Email" class="contact-input" required><br>
+
             <textarea type="text" name="message" placeholder="Message" class="contact-input" draggable="false"
                 required></textarea><br>
+
+                <input type="hidden" name="_subject" value="Website contact"/><br>
+                <div class="g-recaptcha" data-sitekey="6Le6f1MrAAAAAFToDfrJZujHbdxH7JWViMjIxO0S"></div><br>
+
             <button type="submit">Submit</button>
 
             <label for=""></label>

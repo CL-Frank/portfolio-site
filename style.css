@@ -1,3 +1,8 @@
+:root{
+    --white: #FFFFFF;
+    --main: #1a1a1a;
+    --accent:#262626;
+}
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -8,7 +13,7 @@ body {
     padding: 0;
     min-height: 100vh;
     font-family: montserrat, sans-serif;
-    background-color: #1a1a1a;
+    background-color: var(--main);
 }
 /* Hero Button */
 .btn {
@@ -16,26 +21,26 @@ body {
     font-size: 1.6rem;
     font-weight: 600;
     border: none;
-    border-radius: 50px;
+    border-radius: 1em;
     background: linear-gradient(135deg, #ff5d52, #ff9447);
-    color: white;
+    color: var(--white);
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 4px 8px rgba(255, 93, 82, 0.3);
-    letter-spacing: 1px;
+    letter-spacing: 0.2em;
     margin: 5rem;
   }
 /* NAVBAR */
 .navbar {
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 6rem;
-    border-bottom: 1px solid #1a1a1a;
-    background-color: rgba(40, 40, 40, 0.95);
+    border-bottom: 1px solid var(--main);
+    /* background-color: rgba(40, 40, 40, 0.95); */
+    background-color: var(--accent);
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     z-index: 99999999999;
@@ -45,7 +50,7 @@ ul{
     margin-right: 10rem;
     font-size: 2rem;
     font-weight: 500;
-    letter-spacing: 1px;
+    /* letter-spacing: 0.1em; */
 }
 .ul:not(:last-child) {
     margin-right: 3rem;
@@ -84,7 +89,7 @@ ul{
     bottom: 0;
     width: 100%;
     height: 100vh;
-    background-color: #1a1a1a;
+    background-color: var(--main);
     overflow: hidden;
 }
 /* HERO */
@@ -122,7 +127,7 @@ ul{
 .about {
     /* background-color: antiquewhite; */
     position: relative;
-    width: 1100px;
+    /* width: 50vw; */
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -137,41 +142,45 @@ ul{
     font-size: 5.5rem;
     font-weight: 700;
     margin-top: 13rem;
-    margin-bottom: 9rem;
 }
 
 
 
 .about-content {
-    background-color: #4e3036;
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
-    color: #fafafa;
+    color: var(--white);
+
+    /* background-color: #4e3036; */
 }
 
 
 .profile {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 500;
+    /* position: static; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* font-weight: 500; */
     /* opacity: 0; */
     /* transition: all 1.1s; */
+    margin: auto;
+    /* background-color: #ff9447; */
 }
-.profile-img{
-    height: 40rem;
-}
-.profile-img img{
-    height: 100%;
+
+.profile img{
+    height: 30rem;
+    /* border-radius: 60%; */
+    clip-path: ellipse(50% 50%);
+    /* background-color: aliceblue; */
 }
 
 
 .about-text{
     font-size: 1.8rem;
     line-height: 1.8;
-    width: 500px;
+    margin: 3em 2em 3em ;
+    /* background-color: #ff9447; */
 }
 /* ABOUT SECTION END*/
 /* PROJECTS START*/
@@ -183,7 +192,7 @@ ul{
   /* width: 100%; */
   /* max-width: 1200px; */
   margin: 0 auto;          
-  padding: 2rem;
+  /* padding: 2rem; */
 
   position: relative;
   margin: auto;
@@ -198,13 +207,13 @@ ul{
     flex-direction: column;
     /* flex-direction: column; */
     justify-content: flex-start;
-    color: #fafafa;
+    color: var(--white);
     margin: 1rem ;
     border-radius: 0.8rem;
     
     transition: all 0.2s;
 
-    background-color: #262626;
+    background-color: var(--accent);
 
 }
 .project-text{
@@ -249,7 +258,7 @@ ul{
     width: 100%;
     opacity: 0;
     /* background-color: rgba(0, 0, 0, 0.6);  */
-    color: white;
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,7 +277,7 @@ ul{
     font-size: 3rem;
     line-height: 2rem;
     font-weight: 800;
-    color: #fafafa;
+    color: var(--white);
     margin-bottom: 1rem;
     width: 90%;
     margin: 1em;
@@ -279,7 +288,7 @@ ul{
       display: flex;
       font-size: 2rem;
       margin: 1rem;
-      color: #cccccc;
+      color: var(--white);
       /* text-align: center; */
     }
     .project-tools p{
@@ -296,7 +305,6 @@ ul{
 }
 
 .contact-text{
-    
     font-size: 1.8rem;
 }
 .contact-form{
@@ -316,7 +324,7 @@ ul{
     align-items: center;
     margin-left: 100%;
     padding: 15px 30px;
-    color: #fff;
+    color: var(--white);
     border: none;
     cursor: pointer;
     border-radius: 40px;
@@ -327,11 +335,12 @@ ul{
     height: 50px;
     border: none;
     outline: none;
+    font-size: 2em;
     font-weight: 500;
-    color: #666;
-    border-radius: 50px;
+    color: var(--white);
+    border-radius: 0.7em;
     padding-left: 25px;
-    background-color: #262626;
+    background-color: var(--accent);
 }
 
 .contact-input:focus{
@@ -344,8 +353,8 @@ ul{
 /* CONTACT END*/
 /* FOOTER */
 footer{
-    height: 160px;
-    background-color: #202020;
+    height: 20em;
+    background-color: var(--accent);
 }
 /* FOOTER END */
 /* ELEMENTS */
@@ -360,22 +369,22 @@ canvas {
     overflow: clip;
 }
 h2{
-    color: #fafafa;
+    color: var(--white);
     display: block;
     font-size: 5.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     font-weight: bold;
 }
 p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: #fafafa;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    color: var(--white);
 }
 hr{
     border: none;
@@ -392,7 +401,7 @@ a{
     text-decoration: none;
 }
 /* ELEMENTS END */
-
+/* Background Particles */
 #particles-js {
     position: fixed;
     top: 0;
@@ -402,3 +411,122 @@ a{
     z-index: 0;
     pointer-events: none;
   }
+
+  /* Mobile View */
+@media (max-width: 768px) {
+    .hero-heading span.clf {
+        font-size: 3rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-img img {
+        width: 80%;
+        height: auto;
+    }
+
+    .project-content {
+        margin: 1rem 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+    /* About Start */
+    .about{
+    }
+    /* About End */ 
+    /* PROJECTS START*/
+.projects{
+  width: 100vw;
+  background-color: aqua;
+}
+
+.project-content{
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    margin: 1rem ;
+    border-radius: 0.8rem;
+    width: 80%;
+    transition: all 0.2s;
+
+
+}
+.project-text{
+    position: absolute;
+    /* margin-left: -8rem; */
+    font-size: 1.3em;
+    line-height: 1.8;
+    margin: 3.4rem;
+    /* width: 500px; */
+}
+.project-img-container{
+    /* position: relative; */
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+}
+
+.image-overlay{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.image-overlay img{
+    width: 100%;
+    height: 100%;
+}
+.overlay-text{
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    opacity: 0;
+}
+
+.project-title {
+    font-size: 3rem;
+    line-height: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    width: 90%;
+    margin: 1em;
+
+    /* text-align: center; */
+  }
+  .project-tools {
+      display: flex;
+      font-size: 2rem;
+      margin: 1rem;
+      /* text-align: center; */
+    }
+    .project-tools p{
+        margin-right: 2rem;
+        
+  }
+/* PROJECTS END */
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 1000px var(--accent) inset !important; /* background override */
+  border: 1px solid var(--accent); /* optional */
+  -webkit-text-fill-color: var(--white) !important; /* text color */
+
+}
