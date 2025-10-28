@@ -6,30 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caydan Frank Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="script.js" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <div id="particles-js"></div>
+
 <body>
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="hero-heading">
             <div>
                 <span class="clf" style="font-size: 6rem;">I'm Caydan Frank</span> <br>
 
             </div>
             <div class="hero-blurb">
-                <!-- I am a web developer with a passion for creating innovative and user-friendly experiences. -->
-
+                 I am a web developer with a passion for creating innovative and user-friendly experiences.
             </div>
             <a href="#about" class="btn">View my Work</a>
         </div>
-    </section>
+    </section> -->
     <nav class="navbar">
         <ul>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#contact">Contacts</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="#projects">Projects</a></li>
+            <li class="nav-link"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div class="background">
@@ -38,14 +40,69 @@
         <h2 class="about-heading">About</h2>
         <div class="about-content">
             <div class="profile">
-                    <img src="imgs/profile_2.jpg" alt="Image">
+                <img src="imgs/red_portrait.png" alt="Image">
+                <div class="about-info">
+                    <h3>Caydan Frank</h3>
+                    <p>Software Developer</p>
+                    <p>📍 South Africa</p>
+                    <p>21-year-old Full Stack Developer</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/CL-Frank" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github fa-3x"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/caydan-frank-0a335a351/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin fa-3x"></i>
+                        </a>
+                    </div>
+
+                </div>
             </div>
-            <p class="about-text">I'm a Bachelor of Computing student at Belgium Campus with a passion for full-stack development, problem-solving, and continuous growth. With experience in both frontend and backend web application development. <br><br> <br>
-                This portfolio showcases some of my projects, skills, and experiences that reflect my journey as a developer and leader. Whether you're here to view my work, explore my capabilities, or connect on opportunities—thank you for visiting!.</p>
+            <div class="about-text">
+                <h3>Skills</h3>
+                <h4>Frontend</h4>
+                <div class="about-skills">
+                    <span class="skill-tag"><i class="devicon-html5-plain"></i> HTML</span>
+                    <span class="skill-tag"><i class="devicon-css-plain"></i>CSS</span>
+                    <span class="skill-tag"></i>Express.js</span>
+                    <!-- Add more skills as needed -->
+                </div>
+                <h4>Backend</h4>
+
+                <div class="about-skills">
+                    <span class="skill-tag"><i class="devicon-csharp-plain"></i> C-Sharp</span>
+                    <span class="skill-tag">
+            <i class="devicon-java-plain"></i>
+          Java</span>
+                    <span class="skill-tag">
+            <i class="devicon-javascript-plain"></i>
+          JavScript</span>
+                    <span class="skill-tag">
+            <i class="devicon-python-plain"></i>
+          Python</span>
+                    <span class="skill-tag">
+            <i class="devicon-nodejs-plain"></i>
+          Node.js</span>
+                    <!-- Add more skills as needed -->
+                </div>
+                <h4>Database</h4>
+                <div class="about-skills">
+                    <span class="skill-tag">
+            <i class="devicon-mongodb-plain"></i>
+          MongoDB</span>
+                    <span class="skill-tag">
+            <i class="devicon-mysql-original"></i>
+          MySQL</span>
+                    <span class="skill-tag">
+            <i class="devicon-postgresql-plain"></i>
+          Postgre</span>
+                    <!-- Add more skills as needed -->
+                </div>
+                <!-- <h3>Education</h3> -->
+            </div>
         </div>
     </section>
     <h2 class="about-heading" id="projects">Projects</h2>
-    <section class="projects" >
+    <section class="projects">
         <!-- Backrooms Project -->
         <div class="project-content">
             <h2 class="project-title">The Backrooms (Game)</h2>
@@ -54,15 +111,18 @@
 
                     <img src="imgs/backrooms.png" alt="">
                     <div class="overlay-text">
-                        <p class="project-text">A short Unity-based horror game inspired by the Backrooms concept.
+                        <p class="project-text">A short horror game inspired by the Backrooms concept.
                             Players navigate a maze-like environment to find the exit while avoiding a pursuing monster.
-                            The game features real-time score tracking using an Azure online database.</p>
+                            </p>
                     </div>
                 </div>
             </div>
             <div class="project-tools">
+                <i class="devicon-unity-plain"></i>
                 <p>Unity</p>
-                <p>C#</p>
+                <i class="devicon-csharp-plain"></i>
+                <p>C-Sharp</p>
+                <i class="devicon-azure-plain"></i>
                 <p>Azure</p>
             </div>
         </div>
@@ -74,13 +134,14 @@
 
                     <img src="imgs/finance.png" alt="">
                     <div class="overlay-text">
-                        <p class="project-text">A Windows Forms application built in Visual Studio Code for managing and editing financial events. Users can log detailed product entries, including descriptions, cost price, quantity, and selling price, enabling efficient tracking of inventory and sales data..</p>
+                        <p class="project-text">A Forms application built in VS-Code for managing and
+                            editing financial events. </p>
                     </div>
                 </div>
             </div>
             <div class="project-tools">
-                <p>C#</p>
-                <p>Windows Form</p>
+                <i class="devicon-csharp-plain"></i>
+                <p>C-Sharp</p>
             </div>
 
         </div>
@@ -91,26 +152,26 @@
 
                     <img src="imgs/housepredict.png" alt="">
                     <div class="overlay-text">
-                        <p class="project-text">A web-based application that estimates house prices using real U.S. housing market data. Trained in Python with multiple machine learning models, the app allows users to input property features or upload CSV files for batch predictions. Deployed on Render for fast, accessible performance.</p>
+                        <p class="project-text">A web-based application that estimates house prices using real U.S.
+                            housing market data. Trained in Python with multiple machine learning models.</p>
                     </div>
                 </div>
             </div>
             <div class="project-tools">
+                <i class="devicon-python-plain"></i>
                 <p>Python</p>
+                <i class="devicon-bootstrap-plain"></i>
                 <p>Dash Bootstrap</p>
             </div>
         </div>
-
-
-
     </section>
 
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
-        <p class="contact-text">Feel free to contact me if you'd like to reach reach out or have any questions, I'd be glad to reply!</p>
-        <form class="contact-form" action="https://formspree.io/f/mrbkgqzp"
-  method="POST">
-  <input type="text" name="_gotcha" style="display:none" />
+        <p class="contact-text">Feel free to contact me if you'd like to reach reach out or have any questions, I'd be
+            glad to reply!</p>
+        <form class="contact-form" action="https://formspree.io/f/mrbkgqzp" method="POST">
+            <input type="text" name="_gotcha" style="display:none" />
 
             <input type="text" name="name" placeholder="Name" class="contact-input" required><br>
 
@@ -119,16 +180,16 @@
             <textarea type="text" name="message" placeholder="Message" class="contact-input" draggable="false"
                 required></textarea><br>
 
-                <input type="hidden" name="_subject" value="Website contact"/><br>
-                <div class="g-recaptcha" data-sitekey="6Le6f1MrAAAAAFToDfrJZujHbdxH7JWViMjIxO0S"></div><br>
+            <input type="hidden" name="_subject" value="Website contact" /><br>
+            <div class="g-recaptcha" data-sitekey="6Le6f1MrAAAAAFToDfrJZujHbdxH7JWViMjIxO0S"></div><br>
 
             <button type="submit">Submit</button>
 
             <label for=""></label>
         </form>
     </section>
-    <footer>
-    </footer>
+    <!-- <footer>
+    </footer> -->
 </body>
 
 </html>
