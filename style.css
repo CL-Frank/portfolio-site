@@ -536,7 +536,28 @@ a {
 
 .project-header h1 {
     font-size: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-context {
+    background-color: var(--accent);
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    margin: 1rem auto 2rem;
+    max-width: 600px;
+    text-align: center;
+}
+
+.project-context h3 {
+    color: var(--text_hover);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.8rem;
+}
+
+.project-context p {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--white);
 }
 
 .project-content-detail {
