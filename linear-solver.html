@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[PROJECT NAME] - Caydan Frank</title>
+    <title>Linear Programming Solver - Caydan Frank</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -12,13 +12,24 @@
 
 <body>
     <nav class="navbar">
-        <ul>
+        <div class="nav-brand">Caydan Frank</div>
+        <button class="nav-toggle" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
             <li class="nav-link"><a href="index.html">Home</a></li>
             <li class="nav-link"><a href="index.html#about">About</a></li>
             <li class="nav-link"><a href="index.html#projects">Projects</a></li>
             <li class="nav-link"><a href="index.html#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.location.href='index.html#projects'" title="Back to Projects">
+        <i class="fas fa-arrow-left"></i>
+    </button>
 
     <section class="project-detail">
         <div class="project-header">
@@ -65,7 +76,7 @@
                     <li>Advanced Analysis Tools</li>
                     <li>Visualization & Output</li>
                 </ul>
-                <h3>Algorithm Implementation</h3>
+                <h2>Algorithm Implementation</h2>
                 <ul>
                     <li>Primal Simplex Method</li>
                     <li>Revised Simplex Method</li>
@@ -137,6 +148,11 @@
                 closeModal();
             }
         });
+        
+        function toggleNav() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
     </script>
 </body>
 
