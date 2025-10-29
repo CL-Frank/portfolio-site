@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[PROJECT NAME] - Caydan Frank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="index.html#about">About</a></li>
+            <li class="nav-link"><a href="index.html#projects">Projects</a></li>
+            <li class="nav-link"><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="project-detail">
+        <div class="project-header">
+            <h1>[PROJECT NAME]</h1>
+            <div class="project-links">
+                <a href="[GITHUB-LINK]" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <!-- Optional: Add live demo link -->
+                <!-- <a href="[DEMO-LINK]" target="_blank" class="btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+            </a> -->
+            </div>
+            <div class="project-tools">
+                <!-- Add your technology icons here -->
+                <i class="devicon-[TECHNOLOGY]-plain"></i>
+                <p>[Technology Name]</p>
+                <!-- Repeat for each technology -->
+            </div>
+        </div>
+
+        <div class="project-content-detail">
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>[Brief description of what the project does and its main purpose]</p>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li>[Feature 1 description]</li>
+                    <li>[Feature 2 description]</li>
+                    <li>[Feature 3 description]</li>
+                    <li>[Add more features as needed]</li>
+                </ul>
+
+                <h2>Technical Implementation</h2>
+                <p>[Describe the technical aspects, frameworks, libraries, and architecture used]</p>
+
+                <!-- Optional: Add more sections as needed -->
+                <h2>[Additional Section Title]</h2>
+                <ul>
+                    <li>[Additional detail 1]</li>
+                    <li>[Additional detail 2]</li>
+                </ul>
+            </div>
+
+            <div class="project-images">
+                <img src="imgs/[PROJECT-IMAGE].png" alt="[Project Name] Screenshot">
+                <img src="imgs/[PROJECT-IMAGE-2].png" alt="[Project Name] Screenshot 2">
+                <!-- Add 2-3 key images here that will appear next to the text -->
+            </div>
+        </div>
+
+        <!-- Additional images in a grid below the main content -->
+        <div class="project-gallery">
+            <img src="imgs/[PROJECT-IMAGE-3].png" alt="[Project Name] Screenshot 3" onclick="openModal(this.src)">
+            <img src="imgs/[PROJECT-IMAGE-4].png" alt="[Project Name] Screenshot 4" onclick="openModal(this.src)">
+            <img src="imgs/[PROJECT-IMAGE-5].png" alt="[Project Name] Screenshot 5" onclick="openModal(this.src)">
+            <img src="imgs/[PROJECT-IMAGE-6].png" alt="[Project Name] Screenshot 6" onclick="openModal(this.src)">
+            <!-- Add as many additional images as needed -->
+        </div>
+
+
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById('imageModal').style.display = 'block';
+            document.getElementById('modalImage').src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+
+</html>

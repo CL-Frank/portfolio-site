@@ -300,13 +300,9 @@ ul {
     color: var(--white);
     margin: 1rem;
     border-radius: 0.8rem;
-
+    cursor: pointer;
     transition: all 0.2s;
-
     background-color: var(--accent);
-
-    /* background-color: cadetblue; */
-
 }
 
 .project-text {
@@ -525,6 +521,152 @@ a {
 }
 
 /* ELEMENTS END */
+/* PROJECT DETAIL PAGES */
+.project-detail {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    color: var(--white);
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-header h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.project-content-detail {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.project-description h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text_hover);
+}
+
+.project-description p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.project-description ul {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 1rem 0;
+    padding-left: 0;
+    list-style: none;
+    display: block;
+}
+
+.project-description li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.project-description li::before {
+    content: '▸';
+    color: var(--text_hover);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+
+
+.project-images img {
+    width: 100%;
+    border-radius: 0.8rem;
+    object-fit: cover;
+    /* height: 300px; */
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 900px) {
+    .project-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.project-gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Image Modal */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 1200px;
+    max-height: 90%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: var(--text_hover);
+}
+
+.project-links {
+    text-align: center;
+}
+
+.project-links .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
 /* Background Particles */
 #particles-js {
     position: fixed;

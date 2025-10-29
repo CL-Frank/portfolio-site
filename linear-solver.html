@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[PROJECT NAME] - Caydan Frank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="index.html#about">About</a></li>
+            <li class="nav-link"><a href="index.html#projects">Projects</a></li>
+            <li class="nav-link"><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="project-detail">
+        <div class="project-header">
+            <h1>Linear Programming Solver</h1>
+            <div class="project-links">
+                <a href="https://github.com/CL-Frank/LPR381" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <!-- Optional: Add live demo link -->
+                <!-- <a href="[DEMO-LINK]" target="_blank" class="btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+            </a> -->
+            </div>
+            <div class="project-tools">
+                <!-- Add your technology icons here -->
+                <i class="devicon-python-plain"></i>
+                <p>F-Sharp</p>
+                <i class="devicon-bootstrap-plain"></i>
+                <p>C-Sharp</p>
+            </div>
+        </div>
+
+        <div class="project-content-detail">
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>This is a sophisticated mathematical optimization tool that implements multiple linear programming
+                    algorithms in a modern cross-platform desktop application. The project demonstrates advanced
+                    software engineering principles by combining functional programming (F#) for mathematical
+                    computations with object-oriented design (C#) for the user interface.
+
+                    The application provides a complete workflow from problem formulation through solution analysis,
+                    supporting both manual input and file-based problem definitions. It implements classical
+                    optimization algorithms including Simplex methods, Branch & Bound for integer programming, and
+                    specialized algorithms like the Knapsack solver.]</p>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Problem Input & Formulation</li>
+                    <li>Advanced Analysis Tools</li>
+                    <li>Visualization & Output</li>
+                </ul>
+                <h3>Algorithm Implementation</h3>
+                <ul>
+                    <li>Primal Simplex Method</li>
+                    <li>Revised Simplex Method</li>
+                    <li>Dual Simplex Method</li>
+                    <li>Branch & Bound</li>
+                    <li>Cutting Plane Method</li>
+                    <li>Knapsack Solver</li>
+                    <li></li>
+                </ul>
+
+                <h2>Technical Implementation</h2>
+                <p>The project uses a hybrid F#/C# architecture where F# handles mathematical computations through
+                    immutable data structures and functional algorithms, while C# manages the Avalonia UI layer. Core
+                    algorithms implement a generic ITree<T> interface enabling polymorphic exploration of simplex
+                        tableaux with lazy evaluation for performance. MathNet.Numerics provides efficient matrix
+                        operations, while a dedicated interop layer handles F# union types and option conversions for
+                        seamless language integration. The sensitivity analysis engine caches basis contexts for
+                        real-time parameter range calculations, and a solver registry pattern enables dynamic algorithm
+                        selection. Automatic formulation conversion between standard, canonical, and dual forms
+                        preserves mathematical integrity throughout the solution process.</p>
+
+                <!-- Optional: Add more sections as needed -->
+                <h2>Additional Features</h2>
+                <ul>
+                    <li>Sensitivity Analysis Engine</li>
+                    <li>Duality Framework</li>
+                    <li>File Format Support</li>
+                    <li>Cross-Platform Compatibility</li>
+                </ul>
+            </div>
+
+            <div class="project-images">
+                <!-- Add more screenshots here -->
+                <img src="imgs/linear-solver/formulation.png" alt="">
+                <img src="imgs/linear-solver/summary.png" alt="">
+
+            </div>
+        </div>
+        <div class="project-gallery">
+            <!-- Add more screenshots here -->
+            <img src="imgs/linear-solver/iterations.png" alt="" onclick="openModal(this.src)">
+            <img src="imgs/linear-solver/analysis.png" alt="" onclick="openModal(this.src)">
+            <img src="imgs/linear-solver/element.png" alt="" onclick="openModal(this.src)">
+            <img src="imgs/linear-solver/duality.png" alt="" onclick="openModal(this.src)">
+        </div>
+
+
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById('imageModal').style.display = 'block';
+            document.getElementById('modalImage').src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+
+</html>

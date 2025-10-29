@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[PROJECT NAME] - Caydan Frank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="index.html#about">About</a></li>
+            <li class="nav-link"><a href="index.html#projects">Projects</a></li>
+            <li class="nav-link"><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="project-detail">
+        <div class="project-header">
+            <h1>[PROJECT NAME]</h1>
+            <div class="project-links">
+                <a href="https://github.com/CL-Frank/CampusLearn" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <!-- Optional: Add live demo link -->
+                <!-- <a href="[DEMO-LINK]" target="_blank" class="btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+            </a> -->
+            </div>
+            <div class="project-tools">
+                <i class="devicon-java-plain"></i>
+                <p>Java</p>
+
+                <i class="devicon-thymeleaf-plain"></i>
+                <p>Thymeleaf</p>
+
+                <i class="devicon-postgresql-plain"></i>
+                <p>PostgreSQL</p>
+
+                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                <p>AWS</p>
+            </div>
+        </div>
+
+        <div class="project-content-detail">
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>CampusLearn is a comprehensive educational platform that bridges the gap between traditional
+                    classroom learning and modern digital collaboration. Built with Spring Boot and designed with a
+                    mobile-first approach, the platform creates subject-specific communities where students can engage
+                    in meaningful academic discussions, access learning resources, and connect with qualified tutors.
+                    The system implements a robust role-based architecture supporting students, tutors, and
+                    administrators, each with tailored functionality to enhance the learning experience. <br> <br>
+
+                    The platform addresses common challenges in university education by providing a centralized space
+                    for academic discourse, resource sharing, and peer-to-peer learning. Students can join communities
+                    based on their enrolled subjects, participate in threaded discussions, and access curated learning
+                    materials uploaded by tutors. The real-time messaging system facilitates direct communication
+                    between students and tutors, while the integrated AI chatbot provides instant academic assistance.
+                    Administrative features ensure content quality through comprehensive reporting and moderation
+                    systems.</p>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Community-Based Learning</li>
+                    <li>Real-Time Communication</li>
+                    <li>Role-Based Access Control</li>
+                    <li>AI Integration</li>
+                    <li>Advanced Search & Filtering</li>
+                    <li>Content Management</li>
+                </ul>
+
+                <h2>Technical Implementation</h2>
+                <p>The application follows a layered architecture pattern with clear separation of concerns between the
+                    presentation, business, and data access layers. The backend leverages Spring Boot's dependency
+                    injection and auto-configuration capabilities to create a maintainable and scalable codebase. JPA
+                    entities with Hibernate ORM handle database operations, while custom repository interfaces provide
+                    optimized queries for complex data retrieval scenarios. <br> <br>
+
+                    The frontend combines server-side rendering through Thymeleaf templates with client-side JavaScript
+                    for dynamic interactions. Bootstrap 5 provides the responsive framework, enhanced with custom CSS
+                    for brand consistency and mobile optimization. The WebSocket implementation uses STOMP protocol for
+                    real-time messaging, creating seamless communication channels between users without requiring page
+                    refreshes. <br> <br>
+
+                    File storage integration with Cloudflare R2 (S3-compatible) enables scalable media handling for
+                    user-generated content including profile pictures, thread attachments, and learning resources. The
+                    system implements presigned URLs for secure file access and automatic cleanup procedures for deleted
+                    content to maintain storage efficiency.</p>
+
+                <!-- Optional: Add more sections as needed -->
+                <!-- <h2>[Additional Section Title]</h2>
+                <ul>
+                    <li>[Additional detail 1]</li>
+                    <li>[Additional detail 2]</li>
+                </ul> -->
+            </div>
+
+            <div class="project-images">
+                <img src="imgs/campuslearn/campuslearn.png" alt="CampusLearn Screenshot">
+                <img src="imgs/campuslearn/campuslearn (2).png" alt="CampusLearn Screenshot 2">
+                <!-- Add 2-3 key images here that will appear next to the text -->
+            </div>
+        </div>
+
+        <!-- Additional images in a grid below the main content -->
+        <div class="project-gallery">
+            <img src="imgs/campuslearn/campuslearn.png" alt="CampusLearn Screenshot" onclick="openModal(this.src)">
+            <img src="imgs/campuslearn/campuslearn (2).png" alt="CampusLearn Screenshot 2"
+                onclick="openModal(this.src)">
+            <img src="imgs/campuslearn/campuslearn (3).png" alt="CampusLearn Screenshot 3"
+                onclick="openModal(this.src)">
+            <img src="imgs/campuslearn/campuslearn (4).png" alt="campusLearn Screenshot 4"
+                onclick="openModal(this.src)">
+
+            <!-- Add as many additional images as needed -->
+        </div>
+
+
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal" onclick="closeModal()">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById('imageModal').style.display = 'block';
+            document.getElementById('modalImage').src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+
+</html>

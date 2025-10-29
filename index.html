@@ -31,12 +31,13 @@
         <ul>
             <li class="nav-link"><a href="#about">About</a></li>
             <li class="nav-link"><a href="#projects">Projects</a></li>
-            <li class="nav-link"><a href="#contact">Contact</a></li>
+            <li class="nav-link"><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
     <div class="background">
     </div>
-    <section class="about" id="about">
+    <div id="about"></div>
+    <section class="about">
         <h2 class="about-heading">About</h2>
         <div class="about-content">
             <div class="profile">
@@ -62,49 +63,94 @@
                 <h4>Frontend</h4>
                 <div class="about-skills">
                     <span class="skill-tag"><i class="devicon-html5-plain"></i> HTML</span>
-                    <span class="skill-tag"><i class="devicon-css-plain"></i>CSS</span>
-                    <span class="skill-tag"></i>Express.js</span>
-                    <!-- Add more skills as needed -->
+                    <span class="skill-tag"><i class="devicon-css3-plain"></i>CSS</span>
                 </div>
                 <h4>Backend</h4>
 
                 <div class="about-skills">
                     <span class="skill-tag"><i class="devicon-csharp-plain"></i> C-Sharp</span>
                     <span class="skill-tag">
-            <i class="devicon-java-plain"></i>
-          Java</span>
+                        <i class="devicon-java-plain"></i>
+                        Java</span>
                     <span class="skill-tag">
-            <i class="devicon-javascript-plain"></i>
-          JavScript</span>
+                        <i class="devicon-javascript-plain"></i>
+                        JavScript</span>
                     <span class="skill-tag">
-            <i class="devicon-python-plain"></i>
-          Python</span>
+                        <i class="devicon-python-plain"></i>
+                        Python</span>
                     <span class="skill-tag">
-            <i class="devicon-nodejs-plain"></i>
-          Node.js</span>
-                    <!-- Add more skills as needed -->
+                        <i class="devicon-nodejs-plain"></i>
+                        Node.js</span>
                 </div>
                 <h4>Database</h4>
                 <div class="about-skills">
                     <span class="skill-tag">
-            <i class="devicon-mongodb-plain"></i>
-          MongoDB</span>
+                        <i class="devicon-mongodb-plain"></i>
+                        MongoDB</span>
                     <span class="skill-tag">
-            <i class="devicon-mysql-original"></i>
-          MySQL</span>
+                        <i class="devicon-mysql-original"></i>
+                        MySQL</span>
                     <span class="skill-tag">
-            <i class="devicon-postgresql-plain"></i>
-          Postgre</span>
-                    <!-- Add more skills as needed -->
+                        <i class="devicon-postgresql-plain"></i>
+                        Postgre</span>
                 </div>
-                <!-- <h3>Education</h3> -->
             </div>
         </div>
     </section>
-    <h2 class="about-heading" id="projects">Projects</h2>
+    <div id="projects"></div>
+    <h2 class="about-heading">Projects</h2>
     <section class="projects">
+        <!-- Campus Learn -->
+        <div class="project-content" onclick="window.location.href='campus-learn.html'">
+            <div class="project-title">CampusLearn - Platform</div>
+            <div class="project-img-container">
+                <div class="image-overlay">
+
+                    <img src="imgs/campuslearn/campuslearn.png" alt="">
+                    <div class="overlay-text">
+                        <p class="project-text">A modern web-based learning platform designed for university students
+                            and tutors to collaborate, share knowledge, and engage in academic discussions through
+                            community-driven learning environments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tools">
+                <i class="devicon-java-plain"></i>
+                <p>Java</p>
+
+                <i class="devicon-thymeleaf-plain"></i>
+                <p>Thymeleaf</p>
+
+                <i class="devicon-postgresql-plain"></i>
+                <p>PostgreSQL</p>
+
+                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                <p>AWS</p>
+            </div>
+        </div>
+        <!-- Linear Programming Solver -->
+        <div class="project-content" onclick="window.location.href='linear-solver.html'">
+            <div class="project-title">Linear Programming Solver</div>
+            <div class="project-img-container">
+                <div class="image-overlay">
+
+                    <img src="imgs/linear-solver/formulation.png" alt="">
+                    <div class="overlay-text">
+                        <p class="project-text">A comprehensive desktop application for solving linear and integer
+                            programming problems using multiple optimization algorithms with advanced sensitivity
+                            analysis capabilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-tools">
+                <i class="devicon-python-plain"></i>
+                <p>F-Sharp</p>
+                <i class="devicon-bootstrap-plain"></i>
+                <p>C-Sharp</p>
+            </div>
+        </div>
         <!-- Backrooms Project -->
-        <div class="project-content">
+        <div class="project-content" onclick="window.location.href='backrooms.html'">
             <h2 class="project-title">The Backrooms (Game)</h2>
             <div class="project-img-container">
                 <div class="image-overlay">
@@ -113,7 +159,7 @@
                     <div class="overlay-text">
                         <p class="project-text">A short horror game inspired by the Backrooms concept.
                             Players navigate a maze-like environment to find the exit while avoiding a pursuing monster.
-                            </p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -127,8 +173,8 @@
             </div>
         </div>
 
-        <div class="project-content">
-            <div class="project-title">Finanace Manager for Events</div>
+        <div class="project-content" onclick="window.location.href='finance-manager.html'">
+            <div class="project-title">Finance Manager for Events</div>
             <div class="project-img-container">
                 <div class="image-overlay">
 
@@ -145,7 +191,7 @@
             </div>
 
         </div>
-        <div class="project-content">
+        <div class="project-content" onclick="window.location.href='house-predictor.html'">
             <div class="project-title">U.S House Price Predictor</div>
             <div class="project-img-container">
                 <div class="image-overlay">
@@ -164,6 +210,8 @@
                 <p>Dash Bootstrap</p>
             </div>
         </div>
+
+
     </section>
 
     <section class="contact" id="contact">
@@ -181,7 +229,7 @@
                 required></textarea><br>
 
             <input type="hidden" name="_subject" value="Website contact" /><br>
-            <div class="g-recaptcha" data-sitekey="6Le6f1MrAAAAAFToDfrJZujHbdxH7JWViMjIxO0S"></div><br>
+            <div class="g-recaptcha" data-sitekey="6Le-4vkrAAAAAChP7cmCARXN_m9G_PxodG8Yakci"></div><br>
 
             <button type="submit">Submit</button>
 
