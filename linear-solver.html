@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linear Programming Solver - Caydan Frank</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
@@ -36,7 +37,7 @@
             <h1>Linear Programming Solver</h1>
             
             <div class="project-context">
-                <h3>University Project</h3>
+                <h3>University Group Project</h3>
                 <p>LPR381 - Linear Programming</p>
             </div>
             
@@ -63,7 +64,7 @@
                 <p>This is a sophisticated mathematical optimization tool that implements multiple linear programming
                     algorithms in a modern cross-platform desktop application. The project demonstrates advanced
                     software engineering principles by combining functional programming (F#) for mathematical
-                    computations with object-oriented design (C#) for the user interface.
+                    computations with object-oriented design (C#) for the user interface. <br><br>
 
                     The application provides a complete workflow from problem formulation through solution analysis,
                     supporting both manual input and file-based problem definitions. It implements classical
@@ -84,14 +85,15 @@
                     <li>Branch & Bound</li>
                     <li>Cutting Plane Method</li>
                     <li>Knapsack Solver</li>
-                    <li></li>
                 </ul>
 
                 <h2>Technical Implementation</h2>
                 <p>The project uses a hybrid F#/C# architecture where F# handles mathematical computations through
                     immutable data structures and functional algorithms, while C# manages the Avalonia UI layer. Core
                     algorithms implement a generic ITree<T> interface enabling polymorphic exploration of simplex
-                        tableaux with lazy evaluation for performance. MathNet.Numerics provides efficient matrix
+                        tableaux with lazy evaluation for performance. 
+                        
+                        <br><br>MathNet.Numerics provides efficient matrix
                         operations, while a dedicated interop layer handles F# union types and option conversions for
                         seamless language integration. The sensitivity analysis engine caches basis contexts for
                         real-time parameter range calculations, and a solver registry pattern enables dynamic algorithm
@@ -117,6 +119,8 @@
         </div>
         <div class="project-gallery">
             <!-- Add more screenshots here -->
+            <img src="imgs/linear-solver/formulation.png" alt="" onclick="openModal(this.src)">
+            <img src="imgs/linear-solver/summary.png" alt="" onclick="openModal(this.src)">
             <img src="imgs/linear-solver/iterations.png" alt="" onclick="openModal(this.src)">
             <img src="imgs/linear-solver/analysis.png" alt="" onclick="openModal(this.src)">
             <img src="imgs/linear-solver/element.png" alt="" onclick="openModal(this.src)">
