@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caydan Frank Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="imgs/favicon.ico">
+
     <script>
         function toggleNav() {
             const navMenu = document.querySelector('.nav-menu');
@@ -18,7 +25,11 @@
         }
     </script>
     <script src="script.js" defer></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <head>
+  <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+  <!-- Your code -->
+</head>
 </head>
 <div id="particles-js"></div>
 
@@ -67,6 +78,9 @@
                         <a href="https://linkedin.com/in/caydan-frank-0a335a351/" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin fa-3x"></i>
                         </a>
+                        <a href="mailto:frankcaydan@gmail.com">
+                            <i class="fa-solid fa-envelope fa-3x"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -106,6 +120,7 @@
                         <i class="devicon-postgresql-plain"></i>
                         Postgre</span>
                 </div>
+                <a class="btn" href="CV/caydan_frank_cv.pdf" download="caydan_frank_cv.pdf">Download CV</a>
             </div>
         </div>
     </section>
@@ -241,7 +256,7 @@
                 required></textarea><br>
 
             <input type="hidden" name="_subject" value="Website contact" /><br>
-            <div class="g-recaptcha" data-sitekey="6Le-4vkrAAAAAChP7cmCARXN_m9G_PxodG8Yakci"></div><br>
+            <div class="g-recaptcha" data-sitekey="6Le-4vkrAAAAAChP7cmCARXN_m9G_PxodG8Yakci" data-action="LOGIN"></div><br>
 
             <button type="submit">Submit</button>
 
